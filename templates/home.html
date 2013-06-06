@@ -1,0 +1,21 @@
+{% extends "headers.html" %}
+{% block body %}
+
+{% if not threads %}
+	<div id="no_threads">There are no threads yet, go ahead and start writing</div><br />
+{% endif %}
+
+<div id="thread_head">Author | Title</div>
+{% for thread in threads %}
+	<div class="{{ loop.cycle('thread_odd', 'thread_even') }}">{{thread.author}} | 
+	<a href="/thread/{{thread.id}}">{{thread.title}}</a></div>
+{% endfor %}
+<br />
+<form name="input" action="/new" method="post">
+	Name: <input type="text" name="name" maxlength="50" /><br />
+	Title: <input type="text" name="title" maxlength="100" /><br />
+	Body:<br />
+	<textarea rows="15" cols="60" name="body"></textarea><br />
+	<input type="submit" value="Post">
+</form>
+{% endblock %}
