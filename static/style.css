@@ -51,7 +51,8 @@ body{
 .body{
 	display: inline-block;
 	vertical-align:top;
-	width: 29%;
+	width: 69%;
+	border-left: 1px solid #aaa;
 	padding: 3px;
 }
 
@@ -70,11 +71,6 @@ form{
 }
 
 form input{
-	display: inline-block;
-	vertical-align:top;
-}
-
-#body_label input{
 	display: inline-block;
 	vertical-align:top;
 }
