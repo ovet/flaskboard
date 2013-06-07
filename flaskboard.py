@@ -76,8 +76,8 @@ class Post(db.Model):
 
 @app.route('/')
 def home():
-  """Display all threads"""
-  threads = Thread.query.all()
+  """Display the newest 20 threads"""
+  threads = Thread.query.order_by(Thread.date.desc()).limit(20).all()
   return render_template('home.html', threads=threads)
 
 @app.route('/new', methods=['POST'])

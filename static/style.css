@@ -1,4 +1,4 @@
-body {
+body{
         background-color: #f6f6f6;
         font-family: Verdana, Helvetica, Arial;
         font-size: 100%;
@@ -6,7 +6,75 @@ body {
         color: #003;
 }
 
-.flash {
+.flash{
         background-color: red;
         color: #fff;
+	margin: 0 3px 3px 3px;
+	padding: 3px;
+}
+
+.thread_even {
+	background-color: #e5e5e5;
+	border: 1px solid #d3d3d3;
+}
+
+.thread_odd {
+	background-color: #b4b4b4;
+	border: 1px solid #a2a2a2;
+}
+
+.author{
+	display: inline-block;
+	vertical-align:top;
+	width: 20%;
+	border-right: 1px solid #aaa;
+	padding: 3px;
+}
+
+.title{
+	display: inline-block;
+	vertical-align:top;
+	width: 48%;
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	padding: 3px;
+}
+
+.date{
+	display: inline-block;
+	vertical-align:top;
+	width: 29%;
+	border-left: 1px solid #aaa;
+	padding: 3px;
+}
+
+.body{
+	display: inline-block;
+	vertical-align:top;
+	width: 29%;
+	padding: 3px;
+}
+
+form{
+	background-color: #b4b4b4;
+	border: 1px solid #a2a2a2;
+	width: 50%;
+	margin: 0;
+	padding: 3px;
+}
+
+.label{
+	display: inline-block;
+	vertical-align:top;
+	width: 15%;
+}
+
+form input{
+	display: inline-block;
+	vertical-align:top;
+}
+
+#body_label input{
+	display: inline-block;
+	vertical-align:top;
 }
