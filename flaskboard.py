@@ -4,7 +4,7 @@ flaskboard
 A bare essential BBS in Flask
 """
 
-__author__ = 'Rich Moore(eng.richardmoore@gmail.com)'
+__author__ = 'Dee Moore(notovet@gmail.com)'
 
 from flask import Flask, flash, request, abort, render_template, redirect, url_for
 from flask.ext.sqlalchemy import SQLAlchemy
